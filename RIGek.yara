@@ -1,8 +1,8 @@
 rule rig_ek
 {
     meta:
-        author = "rotem.salinas@rsa.com"
-        description = "RIGv landing pages"
+        author = "w1mp1k1ng@gmail.com"
+        description = "RIG Exploit Kit"
     strings:
     // Silverlight
         $str1 = "<param name=\\'initParams\\' value=\\'shell32="
@@ -14,7 +14,7 @@ rule rig_ek
         $str5 = "\".replace(\"fdffghe\",\"\");"
         $str6 = "=\"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/\";for(i=0;i<"
         $str7 = "var payload_div = window.document.createElement(\\'div\\');"
-    	$str8 = "window.document.body.appendChild(payload_div);"
+    $str8 = "window.document.body.appendChild(payload_div);"
         
     condition:
         any of ($str*)

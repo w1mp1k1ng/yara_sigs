@@ -2,11 +2,16 @@ rule popcorntime
 {
 meta:
 	author = "kevin.stear@rsa.com"
-	description = "string match for popcorn time PEs"
 
 strings: 
-	$str1 = "id=\"W5M0MpCehiHzreSzNTczkc9d\""
+	// XMP packet header
+    $str1 = "id=\"W5M0MpCehiHzreSzNTczkc9d\"" 
+	// Popcorn Time string match
+	$str2 = "Popcorn_Time.Properties"
 
 condition:
-	any of ($str*)
+
+	$str1 and $str2
     }
+    
+    
