@@ -1,7 +1,7 @@
 rule rig_ek
 {
     meta:
-        author = "rotem.salinas@rsa.com"
+        author = "kevin.stear@rsa.com"
         description = "RIGv landing pages"
     strings:
     // Silverlight
