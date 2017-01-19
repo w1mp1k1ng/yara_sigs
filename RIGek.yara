@@ -1,4 +1,4 @@
-rule rig_ek
+rule rig_ek2
 {
     meta:
         author = "w1mp1k1ng@gmail.com"
