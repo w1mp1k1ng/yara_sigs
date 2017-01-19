@@ -1,7 +1,7 @@
 rule rig_ek2
 {
     meta:
-        author = "w1mp1k1ng@gmail.com"
+        author = "kevin.stear@rsa.com"
         description = "RIG Exploit Kit"
     strings:
     // Silverlight
